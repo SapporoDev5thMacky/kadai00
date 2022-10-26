@@ -1,0 +1,407 @@
+/* ここから下に記載していく */
+/* ILTyの#2 2、CSSを作成するまでの流れ・reset.cssについて */
+@charset "utf-8";
+/* ILTyの#4 文字の大きさを決める */
+html{
+    font-size: 62.5%;
+}
+
+/* -----------------
+    全体の大きさ
+ -------------------------
+ */
+body{
+    color: #222;
+    font-family: "Open Sans",'ヒラギノ角ゴ ProN W3', Hiragino Kaku Gothic ProN, "メイリオ", Meiryo, sans-serif;
+    width: 1200px;
+    font-size: 1.6rem;
+    margin: auto;
+}
+ 
+h1 {
+    color: #333;
+    font-size: 2.4rem;
+    margin: 60px 0 30px 0px;
+    font-weight: bold;
+    text-align: center;}
+
+ .text-center{
+       text-align: center;}
+    
+.text-left{
+       text-align: left;}
+    
+.text-right{
+       text-align: right;}
+
+
+/* ---------------------------
+headerの記載 
+------------------------------*/
+    .container{
+        display: flex;
+        align-items: center;
+    }
+    .area_logo_header{
+        height: 120px;
+    }
+    .area_nav_header{
+        padding: 50px;
+    }
+
+    .area_nav_header{
+        font-size: 21px;
+        width: 120px;
+        height: 100%;
+        background-color: white;
+        padding-top: 50px;
+        box-sizing: border-box;}
+    .list_nav_header{
+        display: flex;}
+    li {
+        list-style: none;}
+    
+    a {
+         display: block;
+         text-decoration: none;
+         color: black;
+        margin-right: 50px;}
+
+  /* relativeが起点になる */
+ .hero{
+    position: relative;
+ }
+.hero img{
+    width: 100%;
+}
+
+.catch_hero{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    /* 文字の中心を真ん中にする */
+    font-size: 40px;
+    color: white;
+    }
+/* .catchtext_hero{
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 3opx;} */
+#text {
+    height: 64px;
+    margin-bottom: 40px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 4rem;
+      }
+#text span {
+    display: inline-block;
+    animation: scale-loop 5s infinite;;
+      }
+    @keyframes scale-loop {
+        0% {
+            transform: scale(0.9, 0.9);
+            color: blue;
+        }
+        50% {
+            transform: scale(1.2, 1.2);
+            color: green;
+        }
+        100% {
+            transform: scale(0.9, 0.9);
+            color: white;
+        }
+      }
+
+
+
+.catchtext2_hero{
+    font-size: 30px;
+    color: white;
+    margin-top: 30px;
+    white-space: nowrap;
+    }  
+
+ /* -----------------
+    Aboutの記載 *
+ /* ---------------------/ */
+
+.area_about{
+    font-size: 2.4rem;
+    font-weight: bold;
+    color: #ffd61a;
+    margin: 60px 0 30px 0px;}
+.text1_about{
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 60px;}
+.text2_about{
+    margin-bottom: 30px;}
+.text3_about{
+    margin-bottom: 40px;
+    line-height: 2;}
+.text4_about{
+    margin-bottom: 40px;}
+.text5_about{
+    margin-bottom: 80px;
+    line-height: 2;}
+.img_about{
+    display: flex;
+    max-width: 1200px;
+    margin-right: auto;
+    margin-left: auto;}
+.item_about{
+    width: 25%;
+}
+/* <!-- 4枚並んだ画像が大きすぎるが直し方が分からない> */
+  
+/* -----------------
+    Course areaの記載 
+    ------------------*/
+
+.text_course{
+    line-height: 2;
+    margin-bottom: 60px;}
+
+/* Course 左右写真のエリアの記載 */
+
+.article_course{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: #fafafa;}
+
+img{
+    width: 100%;
+}
+
+.article_course > li{
+    width: 50%;
+    padding:-10%;
+}
+
+.box_article_course{
+    width: 480px;
+    margin: 0 auto 0 0;}
+.box2_article_course{
+    width: 480px;
+    margin: 0 0 0 auto;}
+
+.title_article_course{
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin: 120px 0 40px 50px;
+    text-align: left;}
+.title2_article_course{
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin: 120px 0 40px 0px;
+    text-align: left;}
+.text_article_course{
+    line-height: 1.5;
+    margin: 0 0 0 50px;
+    text-align: left;}
+.text2_article_course{
+    line-height: 1.5;
+    margin: 0 50px 0 0;
+    text-align: left;}
+
+/* ------------------
+    ニュースエリア 
+    ------------------*/
+
+.area_news{
+    font-size: 2.4rem;
+    font-weight: bold;
+    color: #ffd61a;
+    margin: 60px 0 30px 0px;}
+.text_news{
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 60px;}
+.content {
+    max-width: 960px;
+    margin-right: auto;
+    margin-left: auto;}
+
+.card-wrap {
+        display: flex;
+        margin: auto;
+        justify-content: space-between;}
+.card-list {
+        width: 300px;
+        margin-right: 30px;
+        /* margin-right: 40px; */}
+    
+.card-list:nth-child(3n) {
+        margin-right: 0;}
+      
+.listtitle_news {
+        font-size: 20px;
+        margin: 30px 0 24px 0;
+        text-align: left;}
+      
+.listtext_news {
+        line-height: 1.5;
+        margin-bottom: 30px;}
+
+    /* ボタンは「#11 11、Worksエリア1・displayプロパティ」
+    　　指示書の高さは60　文字は18　差は42→上下padding21 
+        ボタンのmargintopはcontactに合わせて30px。そのため
+        上のlisttextでmargin bottom 30pxに*/
+.btn{
+        display: block;
+        background-color: #ffd61a;
+        color: #fafafa;
+        font-size: 1.8rem;
+        box-sizing: border-box;
+        width: 300px;
+        height: 60px;
+        margin: 30px auto 60px auto;
+        text-align: center;
+        border: none;
+        /* transition: 3s; */
+        padding: 21px 0;}
+       /* box-sizing: border-boxにすれば余白を加えても大きさ変わらない */
+    /* .btn:hover {
+        background: blue;
+        transform: scale(1.3);
+        color: #fff;
+      } */
+      /* transformでクリックした後の大きさ変更 */
+    
+.p-anima{
+        background-repeat: no-repeat;
+        background-color: #ffd61a;
+        background-position: 100% 0;
+        background-size: 200% auto;
+        background-image: linear-gradient(to right,blue 0%, blue 50%, #ffd61a 50%, #ffd61a 100%);
+        transition: color 0.4s, background-position 0.4s;
+      }
+.p-anima:hover {
+        background-position: 0 0;
+        color: white;
+      } 
+
+
+/* ------------------
+    Accessエリア 
+    疑問１area_accessのpadding top 10pxにしないとダメ。
+    →h1でmargin top 60pxなので、padding 0で良さそうと考えたが
+    それだけ余白が消えてしまった。調整した10PXになったが理由が不明？
+    疑問2 padding-bottom 60pxにしたら広すぎた
+    Accessの全体boxでmargin bottom60pxは問題なし
+    灰色の部分の60pxを確保するのに、padding60pxで良さそうなものだが？
+    30pxにしないといけないのはWhy?
+    table accessのmaring-botomは0になっているし。
+    ------------------*/
+    .area_access{
+        background-color: #fafafa;
+        padding: 10px 0 30px 0;
+                }
+    .title_access{
+        text-align: center;
+        font-size: 1.8rem;
+        margin-bottom: 60px;}
+
+    /* 地図の下 */
+    .table_access{
+        margin: 60px auto 0 auto;}
+    td{
+        height: 50px;
+        width: 250px;}
+    .td2{
+        width: 400px;}
+/* ------------------
+    Contactエリア 
+    ------------------*/
+
+    /* 枠線の長さを揃える方法が分からない。見た目で750pxにした */
+    .area_contact{
+        width: 750px;
+        margin: 0 auto 140px auto;
+    }
+
+    .title_contact{
+        text-align: center;
+        font-size: 1.8rem;
+        margin-bottom: 60px;
+        line-height: 2;}
+    
+    .text_contact{
+        margin: 30px auto 0px auto;
+        line-height: 2;}
+    
+    .table_contact{
+        margin-top: 70px;
+        display: flex;
+        flex-wrap: wrap;
+        /* border-bottom: 1px solid #bfbfbf; */
+        border-top: 1px solid #bfbfbf;}
+
+        /* formtitleは指示書で240PXだがmarginを設定するなら */
+        /* width 240-64-16=160px #17 17、Contactエリア2・formのデザイン*/
+    .formtitle{
+        width: 160px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+        /* justify-contentをやめたら字が上になったので、padding topも設定する */
+        padding: 10px 64px 0 16px;
+        border-right: 1px solid #bfbfbf;
+        border-bottom: 1px solid #bfbfbf;}
+
+        /* formitem 500pxは指示書のパーツ400から80％で逆算 */
+    .formitem{
+        width: 500px;
+        /* margin-left: 5px; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-bottom: 1px solid #bfbfbf;}
+    .formparts{
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        box-sizing: border-box;
+        width: 80%;
+        padding: 8px;
+        margin: 5px;
+        border-width: thin;
+        font-size: 1.6rem;}
+    input[type*="checkbox"]{
+        /* appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none; */
+        margin: 0 24px 0 0;
+        background-color: #a0a0a0;
+        border: none;
+        width: 16px;
+        height: 16px;}
+    
+    input[type*="radio"]:checked{
+        background-color: #a0a0a0;
+    } 
+    label{
+        cursor: pointer;
+        padding: 12px 10px 12px 10px;
+        position: relative;}
+
+
+  
+
+
+
+    /* ------------------
+    footerエリア 
+    ------------------*/
+    .footer{
+        background-color: #707070;
+        padding: 30px 0;
+        color: #fafafa;
+    }
