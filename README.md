@@ -1,8 +1,8 @@
-# kadai01
-html Cheeze academy
+# kadai00
+html Cheese academy
 
 ## ①課題内容（どんな作品か）
-- Cheeze academyの仕様に沿うことを目指したものです。
+- Cheese academyの仕様に沿うことを目指したものです。
 
 ## ②工夫した点・こだわった点
 - タイトルでJSで文字を動かした
